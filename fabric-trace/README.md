@@ -3,48 +3,35 @@
 **项目演示站点:** http://139.159.158.116:9528/
 
 #### 一、项目介绍
-基于区块链Hyperledger FabricV2.5的农产品溯源/商品/通用溯源应用模板，部署简单，附压测工具tape、区块链浏览器，文档详细。可以快速使用本系统搭建自己的溯源系统，帮助想法快速落地。采用的技术栈：Fabric V2.5、Gin、Vue.js、Mysql。
+基于区块链Hyperledger FabricV2.5的产品溯源/商品/通用溯源应用模板，部署简单，附压测工具tape、区块链浏览器，文档详细。可以快速使用本系统搭建自己的溯源系统，帮助想法快速落地。采用的技术栈：Fabric V2.5、Gin、Vue.js、Mysql。
 
 ![项目系统架构图](https://truetechlabs-1259203851.cos.ap-shanghai.myqcloud.com/picgo319183738-60337eb8-1799-435f-b0a5-8ac61761aa28.png)
 
 
 
 
-![多类型用户注册](https://truetechlabs-1259203851.cos.ap-shanghai.myqcloud.com/picgo202404151236356.jpg)
+![多类型用户注册](https://i.postimg.cc/RZ9DdyTY/Snipaste-2024-04-21-02-17-25.png)
 
-![农产品上链](https://truetechlabs-1259203851.cos.ap-shanghai.myqcloud.com/picgo202404151238978.png)
-![农产品溯源](https://truetechlabs-1259203851.cos.ap-shanghai.myqcloud.com/picgo202404151238196.png)
-![区块链浏览器可视化](https://truetechlabs-1259203851.cos.ap-shanghai.myqcloud.com/picgo202404151239574.png)
+![产品上链](https://i.postimg.cc/sXWGH6jB/Snipaste-2024-04-21-02-24-44.png)
+![产品溯源](https://i.postimg.cc/zDtD7h41/Snipaste-2024-04-21-03-43-20.png)
+![区块链浏览器可视化](https://i.postimg.cc/KzdbX7bK/Snipaste-2024-04-21-03-43-31.png)
 
-##### 项目地址：
-**Github**:
-[https://github.com/TrueTechLabs/fabric-trace](https://github.com/TrueTechLabs/fabric-trace)
-
-**Gitee**:
-[https://gitee.com/real__cool/fabric-trace](https://gitee.com/real__cool/fabric-trace)
-
-##### 搭建视频地址：
-[https://www.bilibili.com/video/BV1Ar421H7TK](https://www.bilibili.com/video/BV1Ar421H7TK)
-
-##### 项目文档地址(部分内容需要订阅专栏）：
-[https://blog.csdn.net/qq_41575489/category_12075943.html](https://blog.csdn.net/qq_41575489/category_12075943.html)
 
 #### 二、版权声明
-本项目基于Apache License 2.0开源协议，在个人的科研、学习范围内可以自由使用，请附上项目链接。如有商业需求或合作需求，需要联系作者购买授权。
+本项目基于Apache License 2.0开源协议，在个人的科研、学习范围内可以自由使用。如有商业需求或合作需求，需要联系作者购买授权。
 
 #### 三、项目特点
 本项目采用Hyperledger Fabric V2.5，属于目前最新的Fabric版本，具有更好的性能和稳定性，调用链码使用Fabric-gateway模式，是当前版本的推荐方式。内置了tape压测工具，可以方便的对区块链网络进行压测；内置了区块链浏览器，可以方便地查询交易信息。
 项目结构清晰，代码注释详细，方便二次开发。结合了mysql实现账户注册登录功能，更符合真实业务场景。
 
 #### 四、项目背景
-区块链技术的出现，为溯源系统的建设提供了新的思路。区块链技术的不可篡改性、去中心化、可追溯等特点，使得区块链技术成为溯源系统的理想选择。本项目基于Hyperledger Fabric V2.5，实现了一个农产品溯源系统。 在本区块链系统中，有5个内置的角色：种植户、工厂、驾驶员、商店、消费者。其中种植户、工厂、驾驶员、商店可以将信息上链，消费者有信息溯源权限。上述可以上链信息的角色各可以输入5个农产品的属性，方便二次开发。本项目的目标是作为Fabric V2.5下的一个通用溯源模板。
+区块链技术的出现，为溯源系统的建设提供了新的思路。区块链技术的不可篡改性、去中心化、可追溯等特点，使得区块链技术成为溯源系统的理想选择。本项目基于Hyperledger Fabric V2.5，实现了一个产品溯源系统。 在本区块链系统中，有5个内置的角色：生产商、经销商、配送商、零售商、消费者。其中生产商、经销商、配送商、零售商可以将信息上链，消费者有信息溯源权限。上述可以上链信息的角色各可以输入5个产品的属性，方便二次开发。本项目的目标是作为Fabric V2.5下的一个通用溯源模板。
 
 #### 五、搭建步骤
-> 如果部分内容与视频不一致请以本文档为准
 
- **强烈推荐**：使用云服务器搭建本系统，虚拟机问题较多。点击此链接购买腾讯云服务器：[https://curl.qcloud.com/Sjy0zKjy](https://curl.qcloud.com/Sjy0zKjy) 点击首单特惠，购买2核4G或以上的服务器，199/年（价格经常会调整），如果后续准备做程序开发可以用新用户优惠买三年的，安装Ubuntu20.04系统。
+ **强烈推荐**：使用云服务器搭建本系统，虚拟机问题较多。安装Ubuntu20.04系统。
 
-**严格按照以下步骤操作，以下步骤已经经过上百人次的验证，如果遇到报错请仔细检查是否遗漏某个步骤：**
+**严格按照以下步骤操作，如果遇到报错请仔细检查是否遗漏某个步骤：**
 
 1. 安装docker 
 
@@ -170,8 +157,8 @@
 	# realInfoHash string
 	- randomString8
 	```
-执行`./tape --config config_register.yaml -n 1`即可完成用户1的注册，然后可以对农产品上链操作与获取用户信息函数进行压测。更多的压测案例可以根据合约函数的签名进行修改。
-附农产品上链操作与获取用户信息函数进行压测操作指令：
+执行`./tape --config config_register.yaml -n 1`即可完成用户1的注册，然后可以对产品上链操作与获取用户信息函数进行压测。更多的压测案例可以根据合约函数的签名进行修改。
+附产品上链操作与获取用户信息函数进行压测操作指令：
 
 ```	bash
 ./tape --config config_invoke.yaml -n 100
@@ -207,21 +194,4 @@
 	注意：此方式部署项目会在后台运行，如果后续遇到端口号占用可以尝试关闭占用9090端口号的进程，可以参考：
 	[解决端口占用 bind:address already in use](https://blog.csdn.net/qq_41575489/article/details/137434008?spm=1001.2014.3001.5501)
 
-#### 七、本项目相关的后续计划：
 
-1. 本项目目前不够完美，将持续维护，欢迎给项目点亮Star与B站三连，非常感谢！本项目的区块链部分、前后端的说明文档以及简易的二次开发流程已在[《Fabric项目学习笔记 》](https://blog.csdn.net/qq_41575489/category_12075943.html)专栏发布,欢迎订阅支持！
-2. 支持Docker方式部署，简化部署步骤
-#### 八、目前已知存在的问题：
-1. 区块链浏览器有时候会出现无法访问的情况，可以尝试重启浏览器容器。
-
-#### 如果不能按照步骤运行项目
-上述部署步骤已经上百人次验证并顺利完成，如果您通过上述步骤未能运行项目，请检查环境是否与本项目要求的一致，任何修改或遗漏步骤都可能引起项目不能正常运行，请严格按照视频与文章步骤再次尝试。若还是有问题请在[B站项目搭建视频](https://www.bilibili.com/video/BV1Ar421H7TK)评论区查看其他人的留言是否有相同的问题，如果还是没有解决请在视频下评论问题并附上第一个遇到的报错，如果问题不够明确，我们也很难帮助到您。[附完整一刀未剪的搭建视频](https://www.bilibili.com/video/BV1mF4m1P7Go)。
-
-
-[本项目常见问题与解决方案列表](https://blog.csdn.net/qq_41575489/article/details/137886728)
-
-
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=TrueTechLabs/fabric-trace&type=Date)](https://star-history.com/#TrueTechLabs/fabric-trace&Date)

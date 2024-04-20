@@ -144,7 +144,7 @@
 	# 启动前端
 	npm run dev
 	```
-8. 在腾讯云轻量应用服务器防火墙页面，放行TCP端口`8080,9090,9528`
+8. 在云轻量应用服务器防火墙页面，放行TCP端口`8080,9090,9528`
 ![防火墙配置](https://truetechlabs-1259203851.cos.ap-shanghai.myqcloud.com/picgo202404151240899.png)
 9. 在浏览器中打开：http://云服务器IP:9528 即可看到前端页面。
 10. 关闭项目步骤
@@ -196,7 +196,5 @@
 `docker rm -f $(docker ps -aq)`
 2. 在`fabric-trace/application`目录下： 执行： `./start.sh`
 
-	注意：此方式部署项目会在后台运行，如果后续遇到端口号占用可以尝试关闭占用9090端口号的进程，可以参考：
-	[解决端口占用 bind:address already in use](https://blog.csdn.net/qq_41575489/article/details/137434008?spm=1001.2014.3001.5501)
 
 

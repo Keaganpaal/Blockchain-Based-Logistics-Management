@@ -1,0 +1,65 @@
+.anchor-menu-inner {
+  margin-bottom: 46px; }
+
+.anchor-menu .menu-list {
+  background-color: #3475FC; }
+
+.anchor-menu .menu-inner {
+  width: 1248px;
+  margin: 0 auto;
+  text-align: center; }
+
+.anchor-menu .menu-item {
+  display: inline-block;
+  width: 196px;
+  height: 66px;
+  line-height: 66px;
+  text-align: center;
+  color: #C7DDFF;
+  font-size: 18px;
+  border-left: 1px solid #5189FC;
+  cursor: pointer;
+  position: relative; }
+  .anchor-menu .menu-item:last-child {
+    border-right: 1px solid #5189FC; }
+  .anchor-menu .menu-item:hover {
+    color: #fff; }
+  .anchor-menu .menu-item > a {
+    color: inherit; }
+  .anchor-menu .menu-item .top-left,
+  .anchor-menu .menu-item .top-right {
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    z-index: 99; }
+  .anchor-menu .menu-item.active {
+    color: #fff; }
+    .anchor-menu .menu-item.active .menu-arrow {
+      display: block; }
+    .anchor-menu .menu-item.active .top-left {
+      border-width: 1px 0 0 1px;
+      left: -1px;
+      top: 0;
+      width: 4px;
+      height: 4px; }
+    .anchor-menu .menu-item.active .top-right {
+      border-width: 1px 1px 0 0;
+      right: -1px;
+      top: 0;
+      width: 4px;
+      height: 4px; }
+
+.anchor-menu .menu-arrow {
+  position: absolute;
+  bottom: -16px;
+  width: 0;
+  height: 0;
+  border-left: 98px solid transparent;
+  border-right: 98px solid transparent;
+  border-top: 16px solid #3475FC;
+  display: none;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+

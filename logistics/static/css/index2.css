@@ -1,0 +1,33 @@
+.header-banner {
+  background: -webkit-gradient(linear, left bottom, right top, from(#1759FF), to(#4364ED));
+  background: linear-gradient(to top right, #1759FF, #4364ED);
+  background-color: #1759FF; }
+  .header-banner-wrapper {
+    background-position: bottom right;
+    background-repeat: no-repeat; }
+  .header-banner-inner {
+    height: 652px;
+    width: 1248px;
+    margin: 0 auto;
+    padding-top: 257px; }
+  .header-banner-title {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 40px; }
+  .header-banner-descript {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 72px;
+    width: 720px; }
+  .header-banner-button {
+    border: 1px solid #fff;
+    width: 198px;
+    line-height: 56px;
+    height: 56px;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: 24px; }
+    .header-banner-button:link {
+      color: #fff; }
+

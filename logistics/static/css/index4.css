@@ -1,0 +1,90 @@
+.light-image-tab {
+  background: #FBFBFB; }
+  .light-image-tab-inner {
+    padding: 50px 0;
+    width: 1280px;
+    margin: 0 auto; }
+  .light-image-tab-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 50px;
+    text-align: center; }
+  .light-image-tab-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px; }
+    .light-image-tab-nav .nav-item {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      text-align: center;
+      height: 34px;
+      line-height: 34px;
+      cursor: pointer; }
+      .light-image-tab-nav .nav-item-title {
+        position: relative;
+        color: #333;
+        font-size: 20px;
+        display: inline;
+        padding-bottom: 10px; }
+      .light-image-tab-nav .nav-item-bar {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        background-color: #015FEB;
+        height: 4px;
+        width: 0;
+        -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden; }
+      .light-image-tab-nav .nav-item.active .nav-item-bar {
+        width: 100%;
+        margin-left: -50%; }
+  .light-image-tab .content-panel {
+    display: none;
+    height: 686px;
+    -webkit-box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    background: #fff; }
+    .light-image-tab .content-panel :after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    .light-image-tab .content-panel img {
+      height: 100%;
+      width: 100%; }
+    .light-image-tab .content-panel.active {
+      display: block; }
+  .light-image-tab .content-left {
+    float: left;
+    width: 862px;
+    height: 100%; }
+  .light-image-tab .content-right {
+    float: left;
+    width: 368px;
+    color: #333;
+    padding: 110px 0 0 25px; }
+  .light-image-tab .content-right-title {
+    font-size: 24px;
+    background: url(../image/TB1CRCOSH2pK1RjSZFsXXaNlXXa-8-15.png) center left no-repeat;
+    padding: 10px 15px;
+    line-height: 30px; }
+  .light-image-tab .content-item {
+    padding: 20px 0 0 0; }
+    .light-image-tab .content-item:first-child {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #D8D8D8; }
+    .light-image-tab .content-item-title {
+      font-size: 20px;
+      padding-bottom: 10px;
+      line-height: 32px; }
+    .light-image-tab .content-item-descript {
+      font-size: 12px;
+      line-height: 20px;
+      opacity: 0.8; }
+

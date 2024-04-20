@@ -10,7 +10,7 @@
 
 
 
-![多类型用户注册](https://i.postimg.cc/RZ9DdyTY/Snipaste-2024-04-21-02-17-25.png)
+!多类型用户注册(https://i.postimg.cc/RZ9DdyTY/Snipaste-2024-04-21-02-17-25.png)
 
 ![产品上链](https://i.postimg.cc/sXWGH6jB/Snipaste-2024-04-21-02-24-44.png)
 ![产品溯源](https://i.postimg.cc/zDtD7h41/Snipaste-2024-04-21-03-43-20.png)
